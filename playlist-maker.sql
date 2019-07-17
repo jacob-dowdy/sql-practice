@@ -63,6 +63,6 @@ SELECT title FROM songs WHERE artist = 'Queen';
 /* Show name of all artists with a genre of Pop */
 SELECT name FROM artists WHERE genre = 'Pop';
 
-/* Show the title for all songs from artistss who are in the pop genre
+/* Show the title for all songs from artistss who are in the pop genre */
 SELECT title FROM songs WHERE artist IN (
     SELECT name FROM artists WHERE genre LIKE 'Pop');
